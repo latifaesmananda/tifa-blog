@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latifa Aulia Esmananda's Blog</title>
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!--Java Script-->
+    <script src="assets/script.js"></script>
+    <!-- Font Awesome 5.15.4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header class="navbar-container">
+        <div class="jumbotron">
+            <h1>Math World</h1>
+            <p>Welcome to my world!</p>
+        </div>
+        <nav class="nav-list">
+            <ul>
+              <li><a href="#Benefit">History of Math</a></li>
+              <li><a href="#Math">Applied of Math</a></li>
+              <li><a href="#Career">Math Career</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <article id="History" class="card">
+                <h2>History of Math</h2>
+                <p>
+                    Cabang pengkajian yang diketahui sebagai sejarah matematika adalah penyelidikan terhadap asal mula penemuan di dalam matematika dan sedikit perluasannya,
+                    penyelidikan terhadap cara dan notasi matematika pada masa silam.<br>
+                    <br>
+                    Sebelum zaman modern dan penyebaran pengetahuan pengetahuan ke seluruh dunia,
+                    <span id="more-dots">...</span>
+                    <span id="more">
+                    contoh-contoh tertulis dari pengembangan matematika telah mengalami kemilau hanya di beberapa tempat.
+                    Tulisan matematika terkuno yang telah ditemukan adalah Plimpton 322
+                    (matematika Babilonia lebih kurang 1900 SM), Lembaran Matematika Rhind
+                    (Matematika Mesir lebih kurang 2000-1800 SM) dan Lembaran Matematika Moskwa
+                    (matematika Mesir lebih kurang 1890 SM). Semua tulisan itu membahas teorema yang umum diketahui
+                    sebagai teorema Pythagoras, yang tampaknya dijadikan pengembangan matematika tertua dan sangat
+                    tersebar luas setelah aritmetika dasar dan geometri.<br>
+                    <br>
+                    Sumbangan matematikawan Yunani memurnikan metode-metode (khususnya menempuh pengenalan
+                    penalaran deduktif dan kekakuan matematika di dalam pembuktian matematika) dan perluasan
+                    isi bahasan matematika. Kata "matematika" itu sendiri diturunkan dari kata Yunani kuno,
+                    μάθημα (mathema), yang berfaedah "mata pelajaran". Matematika Cina menciptakan sumbangan dini,
+                    termasuk notasi posisional. Sistem bilangan Hindu-Arab dan aturan penggunaan operasinya, dipakai
+                    hingga kini, mungkin dikembangakan menempuh kuliah pada milenium pertama Masehi di dalam matematika
+                    India dan telah diteruskan ke Barat menempuh matematika Islam. Matematika Islam,
+                    pada gilirannya, mengembangkan dan memperluas pengetahuan matematika ke peradaban ini.
+                    Banyak naskah bercakap Yunani dan Arab tentang matematika selanjutnya diterjemahkan ke dalam
+                    bahasa Latin, yang mengarah pada pengembangan matematika lebih jauh lagi di Zaman Pertengahan Eropa.<br>
+                    <br>
+                    Dari zaman kuno menempuh Zaman Pertengahan, ledakan kreativitas matematika seringkali disertai
+                    oleh abad-abad kemandekan. Bersumber pada ratus tahun Renaisans Italia pada ratus tahun ke-16,
+                    pengembangan matematika baru, berinteraksi dengan penemuan ilmiah baru, diproduksi bangun pada
+                    pertumbuhan eksponensial yang berlanjut hingga kini.<br>
+                    <br>
+                    Sumber: <a href="https://id.wikipedia.org/wiki/Sejarah_matematika">Wikipedia</a></span>
+                </p>
+                <div class="read-more">
+                    <button onclick="readMoreFunction()" id="readMoreButton">Read more</button>          
+                </div>
+            </article>
+            <article id="Math" class="card">
+                <h2>Applied of Math: Penerapan Grup Permutasi Pada Penyelesaian Rubik 2x2</h2>
+                <p>Matematika adalah ilmu yang dasar yang harus dimiliki oleh setiap orang. Tanpa disadari dunia ini membutuhkan matematika dalam penyelesaian berbagai masalah. Apa saja? Yuk, simak salah satu masalah berikut!</p>
+                <h3>Kaitan Rubik dengan Grup Permutasi</h3>
+                    <p>
+                        Anggap rubik sebagai kubus, buka hingga membentuk jaring jaring kubus
+                        dengan setiap sisi terbagi 4 bagian, berikan nomor 1-24 seperti gambar.
+                        Maka setiap notasinya dapat ditulis dalam bentuk permutasi yang terdiri
+                        atas cycle-cyle disjoint.
+                    </p>
+                    <figure>
+                        <img src="assets/img/kerangka-rubik.jpg" class="featured-image" alt="Kerangka Rubik 2x2">
+                        <figcaption><strong>Gambar 1: </strong>Kerangka Rubik</figcaption>
+                    </figure>
+                    <p>
+                        Dengan notasi dalam bentuk permutasi pada sisi rubik:<br>
+                        F = (9 10 12 11) (3 13 22 8) (4 15 21 6)<br>
+                        B = (17 18 20 19) (1 7 24 14) (2 5 23 16)<br>
+                        L = (5 6 8 7) (1 9 21 20) (3 11 23 18)<br>
+                        U = (1 2 4 3) (5 17 13 9) (6 18 14 10)<br>
+                        D = (21 22 24 23) (7 11 15 19) (8 12 16 20)<br>
+                        R = (13 14 16 15) (2 19 22 10) (4 17 24 12)<br>
+                    </p>
+                <h3>Notasi Rubik 2x2</h3>
+                    <p>Berikut adalah notasi gerakan pada rubik 2x2:</p>
+                    <figure>
+                        <img src="assets/img/notasi.png" class="featured-image" alt="Notasi Rubik 2x2">
+                        <figcaption><strong>Gambar 2: </strong>Notasi Gerakan Rubik</figcaption>
+                    </figure>
+                <h3>Penyelesaian Rubik 2x2</h3>
+                    <p>
+                        Dengan menggunakan grup permutasi, rubik 2x2 dapat diselesaikan dalam beberapa kasus yang dapat dilihat berikut ini.
+                    </p>
+                    <figure>
+                        <img src="assets/img/penyelesaian.png" class="featured-image" alt="Penyelesaian Rubik 2x2">
+                        <figcaption><strong>Gambar 3: </strong>Penyelesaian Rubik 2x2</figcaption>
+                    </figure>
+                    <p>Menarik bukan? Kita sudah mempelajari bahwa gerak pada rubik 2x2 membentuk grup permutasi dan untuk menyelesaikan rubik 2x2 dapat menggunakan grup permutasi.</p>
+            </article>
+            <article id="Career" class="card">
+                <h2>Math Career</h2>
+                <p>Apa saja karir dari lulusan sarjana matematika? Berikut adalah beberapa karir yang bisa anda tempuh!</p>
+                <div class="career-container">
+                    <article class="career-list">
+                        <h3>Actuary</h3>
+                        <img src="assets/img/aktuaris.jpg" class="featured-image" " alt="Actuary">
+                        <p>Aktuaris adalah profesional pada disiplin ilmu aktuaria dengan kualifikasi tertentu baik melalui pendidikan maupun pengalaman yang intens. Aktuaris bekerja dalam melakukan prediksi risiko bisnis dari suatu permasalahan di perusahaan menggunakan teori matematika, probabilita dan statistika, serta ilmu ekonomi dan keuanga.</p>
+
+                        <h3>Data Analyst</h3>
+                        <img src="assets/img/data-analyst.jpg" class="featured-image" alt="Data Analyst">
+                        <p>Data Analyst mengaplikasikan ilmu dari matematika, statistika dan pengetahuan umum dalam melakukan analisa pada data.</p>
+
+                        <h3>Data Scientist</h3>
+                        <img src="assets/img/data-scientist.jpg" class="featured-image" alt="Data Scientist">
+                        <p>Data Scientist mengaplikasikan ilmu dari matematika, statistika, komputasi dan pengetahuan umum dalam melakukan prediksi pada data.
+                    </article>
+                </div>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Latifa Aulia Esmananda</h2>
+                    <div class=profile-img>
+                        <img src="assets/img/foto-profil.png " alt="Profil Tifa">
+                    </div>
+                </header>
+
+                <section>
+                    <h3>More about me:</h3>
+                    <table>
+                        <tr>
+                            <th>Born</th>
+                            <td>Jakarta, 1<sup>st</sup> May </td>
+                        </tr>
+                        <tr>
+                            <th>Institution</th>
+                            <td>Universitas Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Major</th>
+                            <td>Mathematics</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h3>Reach me at:</h3>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="https://www.instagram.com/latifaauliaa/"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/latifa-aulia-esmananda/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/latifaesmananda"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Belajar Dasar Pemrograman Web &#169; 2023, Latifa Aulia Esmananda</p>
+    </footer>
+</body>
+</html>
